@@ -1,0 +1,262 @@
+/* bilbo-regular - latin */
+@font-face {
+  font-family: "red-hat-display";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/RedHatDisplay/RedHatDisplay-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/RedHatDisplay/RedHatDisplay-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/RedHatDisplay/RedHatDisplay-Bold.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/RedHatDisplay/RedHatDisplay-Bold.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/RedHatDisplay/RedHatDisplay-Bold.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/RedHatDisplay/RedHatDisplay-Bold.svg") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "gelion";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Gelion/Gelion-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Gelion/Gelion-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/Gelion/Gelion-Regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/Gelion/Gelion-Regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/Gelion/Gelion-Regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Gelion/Gelion-Regular.svg")
+      format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "gelion";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Gelion/Gelion-Medium.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Gelion/Gelion-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/Gelion/Gelion-Medium.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/Gelion/Gelion-Medium.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/Gelion/Gelion-Medium.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Gelion/Gelion-Medium.svg")
+      format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "gelion";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Gelion/Gelion-SemiBold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Gelion/Gelion-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/Gelion/Gelion-SemiBold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/Gelion/Gelion-SemiBold.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/Gelion/Gelion-SemiBold.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Gelion/Gelion-SemiBold.svg")
+      format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "gelion";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Gelion/Gelion-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Gelion/Gelion-Bold.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/Gelion/Gelion-Bold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/Gelion/Gelion-Bold.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/Gelion/Gelion-Bold.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Gelion/Gelion-Bold.svg")
+      format("svg"); /* Legacy iOS */
+}
+
+:root {
+  --primary-text: #4b4f51;
+  --second-text: #035755;
+  --accent-text: #fa5652;
+  --primary-backround: #e5e5e5;
+  --color-buttom: #ffffff;
+}
+
+/* сброс стилей */
+a {
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+}
+
+ul li {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* установка стилей */
+
+.container {
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+
+body {
+  width: 1920px;
+
+  background-color: var(--primary-backround);
+  color: var(--primary-text);
+  font-family: gelion, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0em;
+}
+
+.title-red {
+  color: var(--accent-text);
+}
+.title-green {
+  color: var(--second-text);
+}
+
+.button {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  text-align: center;
+
+  height: 55px;
+  width: 154px;
+  border: 2px solid var(--accent-text);
+  border-radius: 46px;
+
+  margin: 0;
+}
+
+/* header */
+.header {
+  display: flex;
+  align-items: baseline;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: baseline;
+}
+
+.list-header {
+  display: flex;
+  padding-left: 0;
+}
+
+.logo {
+  display: flex;
+  color: var(--second-text);
+
+  font-family: red-hat-display, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-right: 620px;
+}
+
+.header-nav .point {
+  font-size: 18px;
+  line-height: 1, 22;
+  color: var (var(--accent-text));
+}
+
+.list-header li:not(:nth-last-child(1)) {
+  margin-right: 45px;
+}
+
+.header-nav .point:hover,
+.header-nav .point:focus {
+  color: var(--accent-text);
+}
+
+.header .button {
+  background-color: transparent;
+
+  color: var(--accent-text);
+  margin-left: auto;
+}
+
+.logo-type {
+  display: inline-flex;
+  align-items: baseline;
+  margin-bottom: 0;
+}
+
+.logo-type::before {
+  content: "";
+  display: inline-flex;
+  width: 63px;
+  height: 63px;
+  background-image: url(../svg/logo.svg);
+  background-size: contain;
+  background-position: center;
+  align-items: center;
+  margin-right: 14px;
+}
+
+/* main */
+/* HERO */
+.main-hero {
+  height: 862px;
+  background-image: url(../svg/foto-hero.svg);
+  background-size: cover;
+  background-size: 1050px 862px;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.hero {
+  padding-top: 207px;
+  padding-bottom: 207px;
+}
+
+.hero h1 {
+  font-family: red-hat-display;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.38;
+
+  color: var(--accent-text);
+  margin-bottom: 96px;
+}
+
+.hero p {
+  font-size: 24px;
+  line-height: 1.9;
+  margin-bottom: 54px;
+}
+
+.hero-block {
+  width: 641px;
+  height: 443px;
+}
+
+.hero button {
+  font-size: 24px;
+
+  color: var(--color-buttom);
+  background-color: var(--accent-text);
+
+  width: 250px;
+  height: 80px;
+}
+
+/* footer */
