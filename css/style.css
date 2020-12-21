@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 /* bilbo-regular - latin */
 @font-face {
   font-family: "red-hat-display";
@@ -98,26 +108,28 @@ ul li {
 
 /* установка стилей */
 
+body {
+  width: 1920px;
+
+  background-color: var(--primary-backround--);
+  color: var(--primary-text);
+  font-family: gelion, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0em;
+}
+
 .container {
-  width: 1500px;
+  width: 1470px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid tomato;
-}
-
-body {
-  width: 1920px;
-
-  background-color: var(--primary-backround);
-  color: var(--primary-text);
-  font-family: gelion, sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.8;
-  letter-spacing: 0em;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .title-red {
@@ -140,6 +152,7 @@ body {
   border-radius: 46px;
 
   margin: 0;
+  cursor: pointer;
 }
 
 /* header */
@@ -173,7 +186,6 @@ body {
 }
 
 .header-nav .point {
-  font-size: 18px;
   line-height: 1, 22;
   color: var (var(--accent-text));
 }
@@ -259,4 +271,136 @@ body {
   height: 80px;
 }
 
-/* footer */
+/* contagion */
+.contagion .contagions {
+  padding-top: 7px;
+}
+
+.title-contagion {
+  margin-top: 0;
+  margin-bottom: 31px;
+  text-align: center;
+}
+
+.contagion .paragrah {
+  width: 520px;
+  line-height: 2.3;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 111px;
+}
+
+.contagion h3 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+
+.list-contagion {
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.list-contagion .point {
+  font-family: inherit;
+  margin-top: 0;
+  padding: 75px 50px 75px;
+
+  width: calc((100% - 60px) / 3);
+  height: 575px;
+}
+
+.list-contagion li:not(:nth-last-child(1)) {
+  margin-right: 30px;
+}
+
+.point.air::before {
+  content: "";
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 56px;
+  width: 270px;
+  height: 250px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  background-image: url(../svg/group-air.png);
+}
+
+.point.hend::before {
+  content: "";
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 56px;
+  height: 263px;
+  width: 284px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  background-image: url(../svg/hend.png);
+}
+
+.point.cap::before {
+  content: "";
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 56px;
+  width: 275px;
+  height: 254px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  background-image: url(../svg/cap.png);
+}
+
+.contagion p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* symptomps */
+.tetle-symp {
+  display: inline-block;
+  width: 289px;
+  margin-left: 325px;
+}
+.title-symptomps span {
+  display: block;
+  text-align: center;
+}
+
+.container-symptomps {
+  width: 1792px;
+  height: 1100px;
+  margin-left: 91px;
+  margin-right: auto;
+  padding-bottom: 140px;
+  padding-left: 511px;
+  padding-right: 564px;
+
+  background-image: url(../svg/symptomps.png);
+  background-repeat: no-repeat;
+  background-position: center top 206px;
+  background-size: 1168px 872px;
+}
+
+.symptomps .paragraph {
+  width: 716px;
+  text-align: center;
+}
+
+/* footer */ ;
