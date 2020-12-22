@@ -127,7 +127,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -137,6 +137,7 @@ body {
 }
 .title-green {
   color: var(--second-text);
+  font-size: 50px;
 }
 
 .button {
@@ -374,24 +375,28 @@ body {
 
 /* symptomps */
 .tetle-symp {
-  display: inline-block;
+  display: block;
   width: 289px;
-  margin-left: 325px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .title-symptomps span {
   display: block;
   text-align: center;
 }
 
+.title-symptomps {
+  margin-top: 0;
+}
+
 .container-symptomps {
+  display: block;
   width: 1792px;
   height: 1100px;
   margin-left: 91px;
   margin-right: auto;
   padding-bottom: 140px;
-  padding-left: 511px;
-  padding-right: 564px;
-
   background-image: url(../svg/symptomps.png);
   background-repeat: no-repeat;
   background-position: center top 206px;
@@ -400,7 +405,163 @@ body {
 
 .symptomps .paragraph {
   width: 716px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
   text-align: center;
 }
 
-/* footer */ ;
+/* to do */
+.container-to-do {
+  display: block;
+  width: 1470px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid tomato; */
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.title-do-to {
+  display: block;
+  width: 473px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 31px;
+}
+
+.title-do {
+  display: block;
+}
+
+.do-to span {
+  display: block;
+  text-align: center;
+}
+
+.paragraph {
+  display: block;
+  text-align: center;
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list-do {
+  padding-left: 0;
+}
+.do-to .list {
+  /* border: 2px solid tomato; */
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.title-sequence {
+  display: flex;
+  font-size: 47px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.list {
+  /* width: 647px; */
+  display: flex;
+  height: 570px;
+  justify-content: space-between;
+}
+
+.container-list {
+  width: 647px;
+  padding-top: 143px;
+  padding-bottom: 143px;
+}
+
+.title-sequence::before {
+  content: " ";
+  display: block;
+  width: 75px;
+  height: 75px;
+  background-color: pink;
+  border-radius: 50%;
+  margin-right: 51px;
+}
+
+.list-do p {
+  margin-left: 115px;
+}
+
+.list-do .list:nth-last-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.img-maps {
+  margin-bottom: 162px;
+}
+
+.title-helps {
+  width: 661px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-helps h2 {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 62px;
+  color: #0c6c44;
+}
+
+.contacts-help {
+  display: flex;
+  max-width: 790px;
+  max-height: 114px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 18px 17px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: pink;
+  border-radius: 57px;
+  margin-bottom: 143px;
+}
+
+.contacts-help button {
+  background-color: #f44a45;
+  color: #ffffff;
+}
+
+/* footer */
+
+.conteiner-footer {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  margin-bottom: 67;
+}
+
+.footer .logo-type {
+  margin-right: 213px;
+}
+.footer p {
+  display: block;
+  text-align: center;
+}
+
+.list-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.list-nav .networks:not(:nth-last-child(1)) {
+  margin-right: 40px;
+}
+
+.list-footer {
+  display: flex;
+  width: 574px;
+  justify-content: space-between;
+}
